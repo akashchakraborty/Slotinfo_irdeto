@@ -32,6 +32,11 @@ def rack_one():
 def rack_two():
 	items2 = Item.query.filter_by(rack_number=2)
 	return render_template('rack2.html',items=items2)
+
+@app.route('/rack3')
+def rack_three():
+	items3 = Item.query.filter_by(rack_number=3)
+	return render_template('rack3.html',items=items3)
 # @app.route('/signup/official')
 # def signup_page1():
 # 	form = OfficialForm() # creates the form object 
