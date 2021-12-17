@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block title %}
+  Home Page
+{% endblock %}
+{% block content %}
+<br>
+<div class = "container text-justify" id="welcome-text">
+    <h1>Hey there,Irdetee !</h1>
+    <br>
+    <h4>Welcome to the Slot information page of Irdeto Delhi Office</h4>
+    <br>
+    <h5 class="text-left">So, what will this website do ?</h5>
+    <p class="text-left">I am sure each one of has faced issues about not knowing which slot is in use or who is using a slot for long runs, log tests and what not. Sometimes many problems have also come up for this "not knowing" stuff. So here is a more convinient solution to your questions and it is a ot easier than checking Storm/Witbe everytime you wanna know about a slot</p>
+    <br>
+    <h5>It will answer the following question...</h5>
+    <br>
+</div>
+<div class="container" id = "question-cards">
+    <div class="card-group">
+        <div class="card bg-primary">
+            <div class="card-body text-center">
+                <p class="card-text text-justify">Who has requested for the slot in question?</p>
+            </div>  
+        </div>
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+                <p class="card-text text-justify">For which project the slot is being used ?</p>
+            </div>
+        </div>
+        <div class="card bg-success">
+            <div class="card-body text-center">
+                <p class="card-text text-justify">For how long will a slot be used for some project ?</p>
+            </div>
+        </div>
+        <div class="card bg-danger">
+            <div class="card-body text-center">
+                <p class="card-text text-justify">Are there any Emergency Slot Request ?</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="container" id="welcome-guide-intro">
+    <h4>Now, you might be thinking how to use it, right ?</h4>
+    <p class="text-left">We got you covered and here is brief on how to use it ...</p>   
+  </div>
+
+  <div class="container" id = "help-cards">
+      <div class="card">
+        <div class="card-body" style="color: black;">
+            <h5 class="card-title">Adding a new project</h5>
+            <p class="card-text text-justify">
+                First, things first...see that <b>"Options"</b> in the top left ?<br>
+                Yes, that one.<br>
+                To create a new project go to that and select <b>Add Project</b>
+            </p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body" style="color: black;">
+            <h5 class="card-title">Slot Reserve Request</h5>
+            <p class="card-text text-justify">
+                First, things first...see that <b>"Options"</b> in the top left ?<br>
+                Yes, that one.<br>
+                To create a new project go to that and select <b>Add Project</b>
+            </p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body" style="color: black;">
+            <h5 class="card-title">Notify all</h5>
+            <p class="card-text text-justify">
+                First, things first...see that <b>"Options"</b> in the top left ?<br>
+                Yes, that one.<br>
+                To create a new project go to that and select <b>Add Project</b>
+            </p>
+        </div>
+      </div>
+  </div>
+  <br>
+  <br>
+{% endblock %}
