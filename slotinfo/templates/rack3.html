@@ -1,36 +1,61 @@
 {% extends 'base.html' %}
 {% block title %}
-  Rack 3 Page
+  Rack 1 Page
 {% endblock %}
 {% block content %}
 <br>
-<div class="container" id = "rack-table3">
-<table class="table table-hover table-dark table-bordered">
-    <thead style="text-align: center;">
-        <tr style="text-align: justify;">
-            <th scope="col" style="width: 8rem;">Rack Number</th>
-            <th scope="col" style="width: 8rem;">Slot Number</th>
-            <th scope="col">Project</th>
-            <th scope="col">Name</th>
-            <th scope="col" style="width:5rem;">Days</th>
-            <th scope="col" style="width: 14rem;">Options</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in items %}
-            <tr style="text-align: justify;">
-                <td>{{item.rack_number}}</td>
-                <td>{{item.slot_number}}</td>
-                <td>{{item.project}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.days_taken}}</td>
-                <td>
-                    <button class="btn btn-outline btn-info">Reserve</button>
-                    <button class="btn btn-outline btn-success">Release</button>
-                </td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<div class="container">
+    <div class="jumbotron">
+        <div class="card" id = "rack-table1" style="color: black;">
+            <div class="card-header">
+                <h4>Storm Rack Three</h4>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="card-title">Details of the rack</h5>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline btn-info float-right badge-pill" style="margin-bottom: 2px;margin-left: 5px;">Reserve</button>
+                        
+                        <button class="btn btn-outline btn-success float-right badge-pill" style="margin-bottom: 2px;">Release</button>
+                    </div>
+                </div>
+                <table class="table table-hover table-light table-bordered" style="color: black;">
+                    <thead style="text-align: center;">
+                        <tr style="text-align: justify;">
+                            <th scope="col" style="width: 8rem;">Rack Number</th>
+                            <th scope="col" style="width: 8rem;">Slot Number</th>
+                            <th scope="col">Project</th>
+                            <th scope="col">Name</th>
+                            <th scope="col" style="width:5rem;">Days</th>
+                            <th scope="col">Date of Reserving</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in items %}
+                            <tr style="text-align: justify;">
+                                <td>{{item.rack_number}}</td>
+                                <td>{{item.slot_number}}</td>
+                                <td>{{item.project}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.days_taken}}</td>
+                                <td>NA</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+.divider{
+    width:7px;
+    height:auto;
+    display:inline-block;
+}
+</style>
 {% endblock %}

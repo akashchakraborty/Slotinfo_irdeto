@@ -37,6 +37,12 @@ def rack_two():
 def rack_three():
 	items3 = Item.query.filter_by(rack_number=3)
 	return render_template('rack3.html',items=items3)
+
+@app.route('/witbe1')
+def wit_rack1():
+	items4 = Item.query.filter_by(rack_number=4)
+	return render_template('rack4.html',items=items4)
+
 # @app.route('/signup/official')
 # def signup_page1():
 # 	form = OfficialForm() # creates the form object 

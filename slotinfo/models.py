@@ -1,4 +1,5 @@
 from slotinfo import db
+from datetime import*
 
 class Item(db.Model):
         slotID = db.Column(db.String(length=10),primary_key=True)
