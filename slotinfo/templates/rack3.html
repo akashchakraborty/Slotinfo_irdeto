@@ -4,17 +4,17 @@
 {% endblock %}
 {% block content %}
 <br>
-<div class="container">
-    <div class="jumbotron">
+<div class="container-fluid">
+    <div class="jumbotron-fluid">
         <div class="card" id = "rack-table1" style="color: black;">
             <div class="card-header">
-                <h4>Storm Rack Three</h4>
+                <h3>Storm Rack Three</h3>
             </div>
 
             <div class="card-body">
                 <div class="row">
                     <div class="col">
-                        <h5 class="card-title">Details of the rack</h5>
+                        <h4 class="card-title">Details of the rack</h4>
                     </div>
                     <div class="col">
                         <button class="btn btn-outline btn-info float-right badge-pill" style="margin-bottom: 2px;margin-left: 5px;">Reserve</button>
@@ -22,15 +22,16 @@
                         <button class="btn btn-outline btn-success float-right badge-pill" style="margin-bottom: 2px;">Release</button>
                     </div>
                 </div>
+                <br>
                 <table class="table table-hover table-light table-bordered" style="color: black;">
                     <thead style="text-align: center;">
                         <tr style="text-align: justify;">
                             <th scope="col" style="width: 8rem;">Rack Number</th>
                             <th scope="col" style="width: 8rem;">Slot Number</th>
-                            <th scope="col">Project</th>
+                            <th scope="col" style="width: 10rem;">Project</th>
                             <th scope="col">Name</th>
                             <th scope="col" style="width:5rem;">Days</th>
-                            <th scope="col">Date of Reserving</th>
+                            <th scope="col" style="width:12rem;">Date of Reserving</th>
                         </tr>
                     </thead>
                     <tbody>
