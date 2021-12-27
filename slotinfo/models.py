@@ -1,3 +1,4 @@
+from enum import unique
 from slotinfo import db
 from datetime import*
 
@@ -12,6 +13,11 @@ class Item(db.Model):
         
         def __repr__(self):
             return f'Item {self.slotID}'
+
+class Projects(db.Model):
+        id = db.Column(db.Integer(),primary_key=True)
+        projname = db.Column(db.String(length=50),nullable=False,unique=True)
+
 
 ### dummy class ###
 

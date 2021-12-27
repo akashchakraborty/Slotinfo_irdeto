@@ -1,6 +1,7 @@
 from slotinfo import app
 from flask import render_template
 from slotinfo.models import Item
+from slotinfo.models import Projects
 from slotinfo.forms import ReserveForm
 
 
